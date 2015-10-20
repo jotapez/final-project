@@ -1,0 +1,946 @@
+/*
+Project Name: Final Project
+Client: AG
+Author: Juan Pablo Castro
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+
+/* Box Model Hack */
+
+* {
+    -moz-box-sizing: border-box;
+    /* Firexfox */
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box;
+    /* IE */
+}
+
+
+/* Clear fix hack */
+
+.clearfix: after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.align-right {
+    float: right;
+    padding: 0 0 10px 10px;
+    /* note the padding around a right floated image */
+}
+
+.align-left {
+    float: left;
+    padding: 0 10px 10px 0;
+    /* note the padding around a left floated image */
+}
+
+body {
+    background: url(../images/background.jpg) no-repeat top center #FFFFFF;
+    display: block;
+   
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+
+/******************************************
+/* FONT STYLES
+/*******************************************/
+
+p {
+    color: #043049;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    font-family: 'Suranna', serif;
+}
+
+
+h1 {
+    font-size: 36px;
+    color: #c77812;
+    font-family: 'Suranna', serif;
+    text-transform: uppercase;
+}
+
+small {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Arimo';
+    color: #7b7b7c;
+}
+
+h3 {
+    font-size: 24px;
+    color: black;
+    font-family: 'Suranna', serif;
+    line-height: 30px;
+}
+
+h4 {
+    font-size: 18px;
+    color: black;
+    font-family: 'Arimo';
+    line-height: 30px;
+}
+
+h2 {
+    font-size: 48px;
+    font-family: 'Suranna', serif;
+}
+
+h5 {
+    font-size: 24px;
+    color: black;
+    font-family: 'Arimo';
+    line-height: 35px;
+}
+
+.active {
+    color: #c77812;
+}
+
+/******************************************
+/* HEADER
+/*******************************************/
+
+h1 a {
+    color: #c77812;
+}
+
+h1 a:hover {
+    color: #d88e2e;
+}
+
+#header-background {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    background:;
+}   
+
+header {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+}
+
+.logo {
+    float: left;
+    padding-top: 90px;
+    width: 50%;
+    clear: both;
+}
+
+header p small a {
+    font-size: 18px;
+    color: #7b7b7c;
+    font-family: 'Arimo', serif;
+}
+
+header nav { 
+    float: right;
+    margin-top: 72px;
+    position: relative;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 30px;
+    font-family: 'Arimo';
+}
+
+header nav ul li a {
+    color: #3d4767;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #c77812;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+	margin-bottom: -1px;
+    border-bottom-color: #c77812;
+}
+
+header nav ul li a:active {
+   color: #c77812;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+	margin-bottom: -1px;
+    border-bottom-color: #c77812;
+}
+
+.phone-number {
+    float: right;
+    margin-top: 30px;
+}
+
+.phone-number a {
+   color: #7b7b7c;
+}
+
+.phone-number a:hover {
+    border-bottom: 1px solid black;
+	margin-bottom: -1px;
+    border-bottom-color: #c77812;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    width: 1100px;
+    max-width: 90%;
+    position: relative;
+}
+
+
+/******************************************
+/* INDEX
+/*******************************************/
+
+
+.container .hero-statement {
+    z-index: 100;
+    width: 50%;
+    position: absolute;
+}
+
+#contact h2 {
+    width: 50px;
+    color: #c77812;
+}
+
+form {
+    z-index: 0;
+    position: absolute;
+    top: 25px;
+    left: 31%;
+    width: 67%;
+    text-align: right;   
+}
+
+textarea {
+    border: none;
+    width:100%;
+    height: 320px;
+    box-shadow: 10px 10px 15px #999999;
+    opacity: 0.9;
+    font-family: 'Arimo', serif;
+    font-size: 24px;
+    color: black;
+    background: #ffffff;
+}
+
+textarea:hover {
+    border: none;
+    width:100%;
+    height: 320px;
+    box-shadow: 8px 8px 13px #999999;
+    font-family: 'Arimo', serif;
+    font-size: 24px;
+    color: black;
+    background: #ffffff;
+    opacity: 10;
+}
+
+.column1 {
+    display: inline-block;
+}
+
+#content-first {
+    display: block;
+    margin: 0 auto;
+    height: 620px;
+}
+
+.hero-statement h2 {
+    font-size: 48px;
+    line-height: 60px;
+    padding-top: 50px;
+    font-family: 'Suranna', serif;
+    color: #3d4767;
+}
+
+.hero-statement h2 a {
+    color: #3d4767;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+	margin-bottom: -1px;
+    border-bottom-color: #c77812;
+}
+
+.hero-statement h2 a:hover {
+    color: #c77812;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+	margin-bottom: -1px;
+    border-bottom-color: #c77812;
+}
+
+#contact h2 {
+    font-size: 48px;
+    width: 100%;
+    font-family: 'Suranna', serif;    
+}
+
+form input {
+    opacity:0,9;
+    position: relative;
+    top: -30px;
+    left: 25px;
+    height: 80px;
+    background: #3d4767;
+    width: 325px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    font-family: 'Arimo', serif; 
+    box-shadow: 20px 20px 20px #999999;
+}
+form input:hover {
+    opacity:0,9;
+    position: relative;
+    top: -30px;
+    left: 25px;
+    height: 80px;
+    background: #333b57;
+    width: 325px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    font-family: 'Arimo', serif; 
+    box-shadow: 15px 15px 15px #999999;
+}
+
+#content-second {
+    display: block;
+    margin: 0 auto;
+    height: 380px;
+    background: white;
+}
+
+.statement {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 68%;
+    position: relative;
+    float: right;
+}
+
+.statement h3 {
+   color: #5d5d5d;
+}
+
+/******************************************
+/* SERVICES
+/*******************************************/
+
+
+.side-nav h4 a {
+    text-decoration: none;
+    color: gray;
+    padding-top: 15px;
+    display: block;
+    border-bottom: 1px solid black;
+	margin-bottom: -1px;
+    border-bottom-color: #c77812;
+}
+
+.side-nav h4 a .active {
+     color: #c77812;
+}
+
+.side-nav h4 a:hover {
+    text-decoration: none;
+    color: #c77812;
+    padding-top: 15px;
+    display: block;
+    border-bottom: 1px solid black;
+	margin-bottom: -1px;
+    border-bottom-color: #c77812;
+}
+
+#content-services {
+    display: block;
+    margin: 0 auto;
+    height: 1050px;
+}
+
+.side-nav {
+    width: 33%;
+    height: 400px;
+    margin-top: 50px;
+    clear: both;
+    float:left;
+}
+
+.services-intro {
+    z-index: 0;
+    float: right;
+    width: 63%;
+    height: 950px;
+    background: #EFEFEF;
+    margin-top: 35px;
+    box-shadow: 10px 10px 15px #BDBEC3 ;
+}
+
+.heading {
+   margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0 40px 0 40px;
+    
+}
+
+.intro {
+    margin-bottom: 30px;
+     padding: 0 40px 0 40px;
+
+}
+
+.intro h5 {
+    color: #3d4767;
+}
+
+.intro-heading {
+    margin-top: 35px;
+    padding: 0 40px 0 40px;
+    
+}
+
+.text p {
+    padding: 0 40px 0 40px;
+    font-size: 20px;
+    line-height: 27px;
+    
+}
+
+aside {
+    left: -59%;
+    margin-top: 50px;
+    position: relative;
+    z-index: 100;
+    width:119%;
+    height: 25%;
+    background: #fafafa;
+    box-shadow: 20px 20px 50px #BDBEC3;
+
+
+}
+
+aside h3 {
+    padding: 3% 50px 50px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #3d4767;
+}
+
+.heading-aside {
+    padding: 40px 50px 0 50px;
+    color: black;
+}
+
+/******************************************
+/* NEWS
+/*******************************************/
+
+.intro-news h2 { 
+    margin-top: 50px;
+    color:  #3d4767;
+    width: 33%;
+    height: 600%;
+    font-size: 40px;
+    line-height: 50px;
+    float: left;
+    clear: both;
+}
+
+.image {
+    height: 250px;
+    width: 100%;
+    background: url(../images/3460965-6640664301-city_.jpg) no-repeat top center #FFFFFF;
+}
+    
+.intro p {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+    
+.news-section {
+    z-index: 0;
+    float: right;
+    width: 63%;
+    height: 100%;
+    margin-top: 35px;
+    box-shadow: 10px 10px 15px #BDBEC3 ;
+    background: #efefef;
+    margin-bottom: 80px;
+}  
+
+.block {
+    background: #efefef;
+    height: 500px;
+}
+
+.block:hover {
+    background: white;
+}
+
+/******************************************
+/* FOOTER
+/*******************************************/
+
+.container {
+    margin: 0 auto;
+    width: 1100px;
+    max-width: 90%;  
+}
+
+footer {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+    background: #f7f7f7;
+}
+
+li {
+    display: block;
+}
+
+footer .column {
+    float:left;
+    width: 25%;
+    margin-top: 80px;          
+}
+
+footer .column-bigger {
+    float:left;
+    width: 25%;
+    margin-top: 80px;         
+}
+
+footer .column-name {
+    width: 25%;
+    margin-top: 215px;  
+    float:left;
+    text-align: right;
+}
+
+.column-name a {
+    font-size: 18px;
+    color: darkgrey;
+    font-family: 'Suranna', serif;
+}
+
+footer ul {
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+footer a {
+    font-size: 14px;
+    color: black;
+    font-family: 'Arimo';
+    line-height: 30px;
+}
+
+footer a:hover {
+    font-size: 14px;
+    font-family: 'Arimo';
+    line-height: 30px;
+    color: #c77812;
+}
+
+.column-name a:hover {
+    font-size: 18px;
+    color: #c77812;
+    font-family: 'Suranna', serif;
+}
+
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+
+@media screen and (max-width: 870px) {
+    
+/* ----------- header----------- */
+
+h1 a {
+    color: #c77812;
+}
+
+#header-background {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+}   
+
+header {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+}
+
+.logo {
+    float: left;
+    padding-top: 40px;
+    width: 30%;
+    clear: both;
+}
+
+header p small a {
+    font-size: 18px;
+    color: #7b7b7c;
+    font-family: 'Arimo', serif;
+}
+
+header nav { 
+    clear: both;
+    float: right;
+    margin-top: -160px;
+    position: relative;
+    text-align: right;
+}
+
+header nav ul li {
+    display: block;
+    font-family: 'Arimo';
+    line-height: 40px;
+}
+
+header nav ul li a {
+    color: #3d4767;
+    font-size: 18px;
+}
+
+.phone-number {
+    clear: both;
+    float: left;
+    margin-top: 30px;
+}
+    
+.phone-number a {
+    font-size: 14px;
+}
+
+/* ----------- home content ----------- */
+
+
+.container .hero-statement {
+    z-index: 100;
+    width: 100%;
+    position: absolute;
+}
+    
+.container #contact{
+    z-index: 50;
+    width: 100%;
+    position: absolute;
+}
+
+#contact h2 {
+    width: 50px;
+    color: #c77812;
+}
+
+form {
+    clear: both;
+    display: block;
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    text-align: left;   
+    top: 490px;
+    left: 0%;
+    width: 67%;
+}
+
+textarea {
+    border: none;
+    width:100%;
+    height: 320px;
+    box-shadow: 10px 10px 15px #999999;
+    opacity: 0.9;
+    font-family: 'Arimo', serif;
+    font-size: 24px;
+    color: black;
+    background: #ffffff;
+}
+
+.column1 {
+    display: inline-block;
+}
+
+#content-first {
+    display: block;
+    margin: 0 auto;
+    height: 900px;
+}
+
+.hero-statement h2 {
+    font-size: 36px;
+    line-height: 50px;
+    padding-top: 50px;
+    font-family: 'Suranna', serif;
+    color: #3d4767;
+}
+
+.hero-statement h2 a {
+    color: #3d4767;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+	margin-bottom: -1px;
+    border-bottom-color: #c77812;
+}
+
+#contact h2 {
+    font-size: 45px;
+    width: 100%;
+    font-family: 'Suranna', serif;    
+}
+
+form input {
+    opacity:0,9;
+    position: relative;
+    top: -30px;
+    left: 6px;
+    height: 80px;
+    background: #3d4767;
+    width: 325px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    font-family: 'Arimo', serif; 
+    box-shadow: 20px 20px 20px #999999;
+}
+
+#content-second {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    background: white;
+}
+
+.statement {
+    margin-top: 100px;
+    width: 100%;
+    margin-bottom: 100px;
+    position: relative;
+    float: right;
+}
+
+.statement h3 {
+   color: #5d5d5d;
+}
+ 
+    
+/* ----------- services ----------- */
+
+ .side-nav h4 a {
+    text-decoration: none;
+    color: gray;
+    padding-top: 15px;
+    display: block;
+    border-bottom: 1px solid black;
+	margin-bottom: -1px;
+    border-bottom-color: #c77812;
+}
+
+#content-services {
+    display: block;
+    margin: 0 auto;
+    height: 1050px;
+}
+
+.side-nav {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    clear: both;
+    float:left;
+}
+
+.services-intro {
+    z-index: 0;
+    float: right;
+    width: 100%;
+    height: 100%;
+    background: #EFEFEF;
+    margin-top: 35px;
+    box-shadow: 10px 10px 15px #BDBEC3 ;
+}
+
+.heading {
+   margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0 40px 0 40px;
+    
+}
+
+.intro {
+    margin-bottom: 30px;
+     padding: 0 40px 0 40px;
+
+}
+
+.intro-heading {
+    margin-top: 35px;
+    padding: 0 40px 0 40px;
+    
+}
+
+.text p {
+    padding: 0 40px 0 40px;
+    font-size: 20px;
+    line-height: 27px;
+    
+}
+
+aside {
+    left: -10%;
+    margin-top: 50px;
+    position: relative;
+    z-index: 100;
+    width: 120%;
+    height: 10%;
+    background: #fafafa;
+    box-shadow: 20px 20px 50px #BDBEC3;
+
+
+}
+
+aside h3 {
+    padding: 3% 50px 50px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #3d4767;
+}
+
+.heading-aside {
+    padding: 40px 50px 0 50px;
+    color: black;
+}
+    
+/* ----------- news ----------- */    
+
+.intro-news h2 { 
+    margin-top: 50px;
+    color:  #3d4767;
+    width: 100%;
+    height: 100%;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.image {
+    height: 250px;
+    width: 100%;
+    background: url(../images/3460965-6640664301-city_.jpg) no-repeat top center #FFFFFF;
+}
+    
+.intro p {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+    
+.news-section {
+    z-index: 0;
+    float: right;
+    width: 100%;
+    height: 100%;
+    margin-top: 35px;
+    box-shadow: 10px 10px 15px #BDBEC3 ;
+    background: #efefef;
+}  
+    
+/* ----------- footer ----------- */
+    
+    
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90%;  
+}
+
+footer {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+    background: #f7f7f7;
+}
+
+li {
+    display: block;
+}
+
+footer .column {
+    float:left;
+    width: 100%;
+    margin-top: 40px;          
+}
+
+footer .column-bigger {
+    float:left;
+    width: 100%;
+    margin-top: 80px;          
+}
+
+footer ul {
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+footer h1{
+    font-size: 24px;
+    color: #f3f3f3;
+    font-family: 'Suranna', serif;
+    text-transform: uppercase;
+}
+
+footer .column-name {
+    width: 100%;
+    margin-top: 50px;  
+    float:left;
+    text-align: left;
+}
+
+
+    @media screen and (min-width: 500px) {
+        
+.hero-statement h2 {
+    font-size: 48px;
+    line-height: 60px;
+    padding-top: 50px;
+    font-family: 'Suranna', serif;
+    color: #3d4767;
+}
+        
+    
+    }
